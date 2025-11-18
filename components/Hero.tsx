@@ -74,4 +74,65 @@ export default function Hero() {
 
         {/* Card lateral con la abogada */}
         <div className="w-full max-w-sm lg:ml-auto">
-          <
+          <div className="card-soft bg-white/95 text-brand-dark">
+            <div className="p-6 sm:p-7 space-y-5">
+              <div className="flex items-center gap-3">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full border border-brand-gold/70">
+                  <Image
+                    src="/images/idalia-profile.jpg"
+                    alt="Licda. Idalia Arcia trabajando en su oficina"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="font-heading text-base font-semibold">
+                    Licda. Idalia Arcia
+                  </p>
+                  <p className="text-xs text-brand-dark/70">
+                    Abogada · ARCIA LEGAL GROUP
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-xs sm:text-sm leading-relaxed text-brand-dark/80">
+                “Cada caso representa una historia de vida. Mi compromiso es
+                escucharla con respeto, explicarte tus opciones con claridad y
+                acompañarte en cada paso del proceso.”
+              </p>
+
+              <div className="space-y-3 text-xs">
+                <div className="flex items-center justify-between">
+                  <span className="font-medium text-brand-dark/90">
+                    Áreas principales
+                  </span>
+                  <span className="rounded-full bg-brand-soft px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-dark/80">
+                    Familia · Penal · Migración · Empresas
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-[11px] text-brand-dark/80">
+                  <div className="rounded-xl bg-brand-light px-3 py-2">
+                    Reglamentación de visitas
+                  </div>
+                  <div className="rounded-xl bg-brand-light px-3 py-2">
+                    Violencia doméstica
+                  </div>
+                  <div className="rounded-xl bg-brand-light px-3 py-2">
+                    Permisos migratorios
+                  </div>
+                  <div className="rounded-xl bg-brand-light px-3 py-2">
+                    Marcas y sociedades
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contacto" className="btn-primary w-full">
+                Evaluar mi caso
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
