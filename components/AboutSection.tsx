@@ -15,6 +15,7 @@ export default function AboutSection() {
       aria-labelledby="sobre-mi-title"
     >
       <div className="section-container grid gap-10 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
+        {/* Texto */}
         <div className="space-y-4">
           <h2
             id="sobre-mi-title"
@@ -48,14 +49,17 @@ export default function AboutSection() {
           </ul>
         </div>
 
-        <div className="relative h-64 sm:h-80 lg:h-[340px]">
+        {/* Imagen (ajustada al recuadro sin recorte feo) */}
+        <div className="relative">
+          {/* Fondo suave detrás del recuadro */}
           <div className="absolute inset-0 rounded-2xl bg-brand-soft/70" />
-          <div className="relative h-full w-full overflow-hidden rounded-2xl border border-brand-soft shadow-soft-lg bg-white">
+          <div className="relative overflow-hidden rounded-2xl border border-brand-soft shadow-soft-lg bg-white">
             <Image
               src="/images/idalia-profile.jpg"
               alt="Licda. Idalia Arcia en su escritorio revisando un expediente"
-              fill
-              className="object-cover object-top"
+              width={900}
+              height={1150}
+              className="w-full h-auto object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent p-4 text-white">
               <p className="font-heading text-lg font-semibold">
