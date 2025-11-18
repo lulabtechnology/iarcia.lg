@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fuentes elegantes (Playfair Display + Nunito Sans) */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-beige text-brand-dark;
+  font-family: "Nunito Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Títulos serif elegantes */
+.font-heading {
+  font-family: "Playfair Display", "Times New Roman", serif;
+}
+
+/* Contenedor general */
+.section-container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Secciones */
+.section-spacing {
+  @apply py-16 sm:py-20;
+}
+
+/* Botones primarios y secundarios */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-brand-accent px-6 py-3 text-sm sm:text-base font-semibold text-white shadow-soft-lg hover:bg-brand-accent/90 transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-brand-accent/70 bg-white/90 px-6 py-3 text-sm sm:text-base font-semibold text-brand-dark shadow-md hover:bg-brand-soft/80 transition-colors duration-200;
+}
+
+/* Cards suaves */
+.card-soft {
+  @apply rounded-2xl bg-white/90 shadow-soft-lg border border-brand-soft/70;
+}
