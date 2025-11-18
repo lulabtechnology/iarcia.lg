@@ -33,11 +33,13 @@ export default function FamilySection() {
             forma en que cada decisión impacta tu vida y la de tus hijos.
           </p>
           <p className="text-sm sm:text-base text-brand-dark/80 leading-relaxed">
-            Acompañamos procesos como custodia, reglamentación de visitas,
-            pensión alimenticia, divorcios y trámites vinculados a la{" "}
-            <span className="font-semibold">patria potestad</span>, buscando
-            siempre soluciones que prioricen el bienestar de los menores y la
-            estabilidad de la familia.
+            Acompañamos procesos como{" "}
+            <span className="font-semibold">
+              custodia, patria potestad, reglamentación de visitas, pensión
+              alimenticia, separación y divorcio
+            </span>
+            , buscando siempre soluciones que prioricen el bienestar de los
+            menores y la estabilidad de la familia.
           </p>
 
           <ul className="mt-3 grid gap-2 text-sm text-brand-dark/90 sm:grid-cols-2">
@@ -47,7 +49,7 @@ export default function FamilySection() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-[4px] inline-block h-2 w-2 rounded-full bg-brand-accent" />
-              Custodia compartida o exclusiva y guarda crianza.
+              Custodia y patria potestad, según las necesidades de cada familia.
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-[4px] inline-block h-2 w-2 rounded-full bg-brand-accent" />
@@ -55,12 +57,7 @@ export default function FamilySection() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-[4px] inline-block h-2 w-2 rounded-full bg-brand-accent" />
-              Divorcios de mutuo acuerdo y contenciosos.
-            </li>
-            <li className="flex items-start gap-2 sm:col-span-2">
-              <span className="mt-[4px] inline-block h-2 w-2 rounded-full bg-brand-accent" />
-              Procesos relacionados con patria potestad y ejercicio de derechos
-              parentales.
+              Mediación y acuerdos extrajudiciales cuando sea posible.
             </li>
           </ul>
 
