@@ -1,41 +1,36 @@
 export default function ServicesSection() {
   const services = [
     {
-      title: "Registro de marca",
-      description:
-        "Registro de marca y protección de tu identidad comercial en Panamá, desde la búsqueda hasta la inscripción y seguimiento.",
-      featured: true
-    },
-    {
-      title: "Creación de sociedades",
-      description:
-        "Constitución de sociedades (S.A. y otras figuras), redacción de actas y acompañamiento en obligaciones legales de la empresa.",
-      featured: true
-    },
-    {
       title: "Derecho de familia",
       description:
-        "Custodia, reglamentación de visitas, pensión alimenticia, divorcios, patria potestad y acuerdos familiares."
+        "Custodia, patria potestad, reglamentación de visitas, pensión alimenticia, divorcios y acuerdos familiares.",
+      featured: false
+    },
+    {
+      title: "Registro de marca y creación de sociedades",
+      description:
+        "Asesoría integral para registrar tu marca y estructurar sociedades anónimas u otras figuras legales de negocio, desde la idea hasta su inscripción formal.",
+      featured: true
     },
     {
       title: "Derecho penal",
       description:
-        "Defensa técnica en procesos penales, asesoría desde las primeras diligencias y audiencias clave."
+        "Defensa técnica en procesos penales, asesoría desde las primeras diligencias y acompañamiento en audiencias."
     },
     {
       title: "Derecho migratorio",
       description:
-        "Permisos de residencia, regularización de estatus y orientación frente a cambios normativos en Panamá."
+        "Permisos de residencia, regularización de estatus y orientación frente a cambios normativos migratorios."
     },
     {
       title: "Registros sanitarios",
       description:
-        "Tramitación de requisitos para comercializar productos que requieren autorización y registro sanitario."
+        "Tramitación de requisitos para comercializar productos que requieren aprobación y control sanitario."
     },
     {
       title: "Derecho de sucesión",
       description:
-        "Herencias, sucesiones y planificación patrimonial para proteger el patrimonio familiar."
+        "Herencias, sucesiones y planificación patrimonial en armonía con los intereses de tu familia."
     }
   ];
 
@@ -64,15 +59,17 @@ export default function ServicesSection() {
           {services.map((service) => (
             <article
               key={service.title}
-              className={`card-soft group flex flex-col justify-between p-5 sm:p-6 ${
-                service.featured
-                  ? "border-2 border-brand-accent/70 bg-white"
-                  : "bg-white/90"
-              }`}
+              className="card-soft group flex flex-col justify-between bg-white/90 p-5 sm:p-6"
             >
               <div className="space-y-3">
-                <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-dark/80">
-                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand-accent" />
+                <div
+                  className={
+                    service.featured
+                      ? "inline-flex items-center gap-2 rounded-full bg-brand-accent px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white shadow-md"
+                      : "inline-flex items-center gap-2 rounded-full bg-brand-soft/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-dark/80"
+                  }
+                >
+                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-white/80" />
                   {service.featured ? "Servicio destacado" : "Servicio legal"}
                 </div>
                 <h3 className="font-heading text-lg font-semibold text-brand-dark group-hover:text-brand-accent transition-colors">
