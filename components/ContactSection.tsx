@@ -31,7 +31,7 @@ export default function ContactSection() {
 
     const body = bodyLines.join("\n");
 
-    const mailtoLink = `mailto:iarcia.lg@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:abogada@arcialegalgroup.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
@@ -191,10 +191,10 @@ export default function ContactSection() {
             <p>
               <span className="font-semibold">Correo:</span>{" "}
               <a
-                href="abogada@arcialegalgroup.com"
+                href="mailto:abogada@arcialegalgroup.com"
                 className="underline decoration-brand-accent/60 underline-offset-2 hover:text-brand-accent"
               >
-                iarcia.lg@gmail.com
+                abogada@arcialegalgroup.com
               </a>
             </p>
             <p>
@@ -237,12 +237,5 @@ export default function ContactSection() {
                 href="#inicio"
                 className="underline underline-offset-2 hover:text-brand-accent"
               >
-                Volver arriba
-              </a>
-            </p>
-          </footer>
-        </aside>
-      </div>
-    </section>
-  );
-}
+
+::contentReference[oaicite:0]{index=0}
