@@ -191,7 +191,7 @@ export default function ContactSection() {
             <p>
               <span className="font-semibold">Correo:</span>{" "}
               <a
-                href="mailto:iarcia.lg@gmail.com"
+                href="abogada@arcialegalgroup.com"
                 className="underline decoration-brand-accent/60 underline-offset-2 hover:text-brand-accent"
               >
                 iarcia.lg@gmail.com
