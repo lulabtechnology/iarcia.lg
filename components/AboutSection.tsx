@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   const highlights = [
-    "Experiencia en litigios de familia, penal y trámites migratorios.",
+    "Experiencia en litigios de familia, penal, trámites migratorios y asesoría empresarial (marcas y sociedades).",
     "Comunicación clara, cercana y sin tecnicismos innecesarios.",
     "Compromiso con la confidencialidad y el respeto a tu historia.",
     "Enfoque en soluciones prácticas que se adapten a tu realidad."
@@ -27,7 +27,8 @@ export default function AboutSection() {
             <span className="font-semibold">ARCIA LEGAL GROUP</span>. Ha
             dedicado su práctica profesional a acompañar personas y familias en
             momentos clave de su vida: desde conflictos familiares y procesos
-            penales, hasta la regularización de su estatus migratorio en Panamá.
+            penales, hasta la regularización de su estatus migratorio y la
+            protección de sus proyectos empresariales.
           </p>
           <p className="text-sm sm:text-base text-brand-dark/80 leading-relaxed">
             Su enfoque combina la{" "}
