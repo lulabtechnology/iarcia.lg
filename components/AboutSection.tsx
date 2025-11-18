@@ -55,7 +55,7 @@ export default function AboutSection() {
               src="/images/idalia-profile.jpg"
               alt="Licda. Idalia Arcia en su escritorio revisando un expediente"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent p-4 text-white">
               <p className="font-heading text-lg font-semibold">
