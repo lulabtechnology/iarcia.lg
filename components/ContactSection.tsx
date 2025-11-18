@@ -237,5 +237,12 @@ export default function ContactSection() {
                 href="#inicio"
                 className="underline underline-offset-2 hover:text-brand-accent"
               >
-
-::contentReference[oaicite:0]{index=0}
+                Volver arriba
+              </a>
+            </p>
+          </footer>
+        </aside>
+      </div>
+    </section>
+  );
+}
